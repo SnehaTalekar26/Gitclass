@@ -4,4 +4,5 @@ class Photo {
     public void click() {
         System.out.println("Clicking a photo");
     }
+
 }

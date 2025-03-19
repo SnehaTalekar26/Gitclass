@@ -5,3 +5,4 @@ class Medicine {
         System.out.println("Taking the medicine");
     }
 }
+

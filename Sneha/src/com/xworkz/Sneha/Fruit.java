@@ -5,3 +5,4 @@ class Fruit {
         System.out.println("Tasting the fruit");
     }
 }
+

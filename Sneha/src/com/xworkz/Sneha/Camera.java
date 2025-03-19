@@ -9,4 +9,5 @@ class Camera {
             System.out.println("Photo object is null");
         }
     }
+
 }

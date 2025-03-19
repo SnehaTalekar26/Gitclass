@@ -9,4 +9,5 @@ class Barber {
             System.out.println("Customer object is null");
         }
     }
+
 }

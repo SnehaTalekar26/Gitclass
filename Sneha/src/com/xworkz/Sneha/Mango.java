@@ -8,5 +8,6 @@ class Mango {
         } else {
             System.out.println("Fruit object is null");
         }
+
     }
 }
