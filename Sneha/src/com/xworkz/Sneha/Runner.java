@@ -6,9 +6,7 @@ class Runner {
         Shop shop=new Shop();
         shop.ads(display);
         System.out.println("---------------------------");
-
-
-
+        
         Poster poster=new Poster();
         Theater theater=new Theater();
         theater.show(poster);
