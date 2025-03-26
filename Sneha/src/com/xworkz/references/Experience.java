@@ -1,19 +1,21 @@
 package com.xworkz.references;
 
 public class Experience {
-    ExperienceDetail experienceDetail;
+    ExperienceDetail experienceDetails;
 
-    Experience(ExperienceDetail experienceDetail){
-        this.experienceDetail=experienceDetail;
+    Experience(ExperienceDetail experienceDetails){
+        this.experienceDetails=experienceDetails;
     }
 
-    void experienceDetail(){
+   public  void experienceDisplay(){
         System.out.println("Experience Details:");
 
-        if(this.experienceDetail!=null){
-            this.experienceDetail.expDisplay();
+        if(this.experienceDetails!=null){
+            this.experienceDetails.expDisplay();
         }
         else
             System.err.println("Pointing to null");
     }
+
+
 }

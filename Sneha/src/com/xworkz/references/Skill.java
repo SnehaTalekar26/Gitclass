@@ -10,7 +10,7 @@ public class Skill {
     }
 
     void skillDisplay(){
-        System.out.println("Skill Name"+this.skillName);
+        System.out.println("Skill Name"+skillName);
         for(Experience ref:experience){
             if(ref!=null){
                 ref.experienceDisplay();

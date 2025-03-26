@@ -9,8 +9,8 @@ public class ExperienceDetail {
 
     ExperienceDetail(Company company,String expPosition,int expYear,Education[] education,House house){
         this.company=company;
-        this.expYear=expYear;
         this.expPosition=expPosition;
+        this.expYear=expYear;
         this.education=education;
         this.house=house;
     }
@@ -19,8 +19,8 @@ public class ExperienceDetail {
             this.company.companyDisplay();
         }
         else
-            System.out.println("Experience Year"+this.expYear);
             System.out.println("Experience Position"+this.expPosition);
+            System.out.println("Experience Year"+this.expYear);
             for(Education ref:education){
                 if(ref!=null){
                     ref.educationDisplay();

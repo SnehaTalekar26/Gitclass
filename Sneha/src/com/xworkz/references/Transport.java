@@ -3,7 +3,7 @@ package com.xworkz.references;
 public class Transport {
     String transportMode;
 
-    Transport(String transportMode){
+    public Transport(String transportMode){
         this.transportMode=transportMode;
     }
     void transportDisplay(){

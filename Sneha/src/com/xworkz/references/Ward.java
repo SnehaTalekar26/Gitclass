@@ -6,7 +6,7 @@ public class Ward {
     Ward(int wardNo){
         this.wardNo=wardNo;
     }
-    void wardDisplay(){
+    public void wardDisplay(){
         System.out.println("Ward No:"+this.wardNo);
     }
 }

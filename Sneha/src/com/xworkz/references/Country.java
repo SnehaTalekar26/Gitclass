@@ -3,8 +3,8 @@ package com.xworkz.references;
 public class Country {
     String name="India";
     String continent="Asia";
-    int countryCode=91;
-    int states=28;
+    int population=144;
+    int states=29;
 
     PrimeMinister pm=new PrimeMinister();
 
@@ -12,7 +12,7 @@ public class Country {
         System.out.println("Country Details");
         System.out.println("Country Name:"+name);
         System.out.println("Country Continent:"+continent);
-        System.out.println("Country Telephone Code"+countryCode);
+        System.out.println("Country Telephone Code"+population);
         System.out.println("Country States"+states);
         System.out.println("-------------------------");
         if(pm!=null){

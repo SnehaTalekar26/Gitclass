@@ -18,7 +18,8 @@ public class Portfolio {
         }
         else
             System.err.println("Pointing to null");
-        System.out.println("Gender"+this.gender);
+
+        System.out.println("Gender:"+this.gender);
         System.out.println("Phone No:"+this.phoneNo);
     }
 }

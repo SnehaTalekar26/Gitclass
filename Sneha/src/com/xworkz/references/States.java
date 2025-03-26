@@ -15,7 +15,6 @@ public class States {
             if(ref!=null){
                 ref.districtDisplay();
             }
-        else
-            System.err.println("Pointing to null");
+        else System.err.println("Pointing to null");
     }
 }

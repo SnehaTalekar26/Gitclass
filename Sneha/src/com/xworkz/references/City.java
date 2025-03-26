@@ -2,16 +2,16 @@ package com.xworkz.references;
 
 public class City {
     String cityName;
-    Ward[] ward;
+    Ward[] wards;
 
     City(String cityName,Ward[] ward){
         this.cityName=cityName;
-        this.ward=ward;
+        this.wards=wards;
     }
 
-    void cityDisplay(){
+    public void cityDisplay(){
         System.out.println("City Name:"+cityName);
-        for(Ward ref:ward){
+        for(Ward ref:wards){
             if(ref!=null){
                 ref.wardDisplay();
             }
