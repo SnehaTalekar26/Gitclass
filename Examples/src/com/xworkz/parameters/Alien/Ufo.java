@@ -23,9 +23,9 @@ public class Ufo {
 
     public void spot(){
         Alien alien1=new Alien();
-        alien1.setIsSeen("Ananya");
+        alien1.setSeenby("Ananya");
         Alien alien2=new Alien();
-        alien2.setIsSeen("Raksha");
+        alien2.setSeenby("Raksha");
         Alien[] aliens={alien1,alien2};
         for(Alien alien:aliens){
             System.out.println("The aliens spotted by "+alien.getSeenby());
