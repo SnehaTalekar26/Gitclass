@@ -1,7 +1,24 @@
 package com.xworkz.Micro.Internal;
 
 public class Biryani extends Food{
-    public Biryani(){
-        System.out.println("No args const in Biryani");
+    @Override
+    public void cook(){
+        System.out.println("Cooking the food");
+    }
+    @Override
+    public void decorate(){
+        System.out.println("Decorating the food");
+    }
+    @Override
+    public void taste(){
+        System.out.println("Tasting the food");
+    }
+    @Override
+    public void eat(){
+        System.out.println("Eating the food");
+    }
+    @Override
+    public void rate(){
+        System.out.println("Rating the food");
     }
 }

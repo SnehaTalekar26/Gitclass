@@ -1,7 +1,24 @@
 package com.xworkz.Micro.Internal;
 
 public class Banana extends Fruits{
-    public Banana(){
-        System.out.println("No args const in Banana");
+    @Override
+    public void distribute(){
+        System.out.println("Distribute the fruits");
+    }
+    @Override
+    public void eat(){
+        System.out.println("Eat the fruits");
+    }
+    @Override
+    public void buy(){
+        System.out.println("Buy the fruits");
+    }
+    @Override
+    public void sell(){
+        System.out.println("Sell the fruits");
+    }
+    @Override
+    public void cut(){
+        System.out.println("Cut the fruits");
     }
 }
