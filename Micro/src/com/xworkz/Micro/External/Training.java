@@ -1,7 +1,24 @@
 package com.xworkz.Micro.External;
 
 public class Training extends Center{
-    public Training(){
-        System.out.println("No args const in Training");
+    @Override
+    public void visit(){
+        System.out.println("Visit the Center");
+    }
+    @Override
+    public void books(){
+        System.out.println("Books in center");
+    }
+    @Override
+    public void place(){
+        System.out.println("Place of center");
+    }
+    @Override
+    public void location(){
+        System.out.println("Location of center");
+    }
+    @Override
+    public void type(){
+        System.out.println("Types of center");
     }
 }
