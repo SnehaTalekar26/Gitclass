@@ -1,7 +1,24 @@
 package com.xworkz.Micro.External;
 
 public class Diamond extends Ring{
-    public Diamond(){
-        System.out.println("No args const in Diamond");
+    @Override
+    public void wear(){
+        System.out.println("Wear the ring");
+    }
+    @Override
+    public void design(){
+        System.out.println("Choose the design of ring");
+    }
+    @Override
+    public void wash(){
+        System.out.println("Wash the ring");
+    }
+    @Override
+    public void color(){
+        System.out.println("Color of ring");
+    }
+    @Override
+    public void buy(){
+        System.out.println("Buy the ring");
     }
 }
