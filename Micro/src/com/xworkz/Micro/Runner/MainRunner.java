@@ -1,6 +1,7 @@
 package com.xworkz.Micro.Runner;
 
 import com.xworkz.Micro.Internal.*;
+import com.xworkz.Micro.Casting.*;
 
 public class MainRunner {
     public static void main(String[] args){
@@ -110,6 +111,12 @@ public class MainRunner {
         artist.create();
         artist.frame();
         artist.draw();
+
+        System.out.println("-------------------------");
+
+        Creative creative=new Creative();
+        creative.vibe(art);
+        creative.vibe(artist);
 
         System.out.println("-------------------------");
 
@@ -497,6 +504,12 @@ public class MainRunner {
         cat.vet();
         cat.growth();
         cat.livingBeings();
+
+        System.out.println("------------------------");
+
+        Fur fur=new Fur();
+        fur.FurRunner(animals);
+        fur.FurRunner(cat);
 
         System.out.println("------------------------");
 
