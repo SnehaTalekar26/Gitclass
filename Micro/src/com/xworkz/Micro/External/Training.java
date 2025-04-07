@@ -21,4 +21,7 @@ public class Training extends Center{
     public void type(){
         System.out.println("Types of center");
     }
+    public void water(){
+        System.out.println("Drink water");
+    }
 }
