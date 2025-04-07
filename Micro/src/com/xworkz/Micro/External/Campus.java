@@ -21,4 +21,7 @@ public class Campus extends College{
     public void library(){
         System.out.println("Library of College");
     }
+    public void read(){
+        System.out.println("Read in campus");
+    }
 }

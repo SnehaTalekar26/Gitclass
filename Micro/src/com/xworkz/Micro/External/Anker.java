@@ -21,4 +21,7 @@ public class Anker extends PowerBank{
     public void type(){
         System.out.println("Type of powerBank");
     }
+    public void brand(){
+        System.out.println("PowerBank Brand");
+    }
 }

@@ -21,4 +21,7 @@ public class Cartier extends Bracelet{
     public void type(){
         System.out.println("Types of bracelet");
     }
+    public void quality(){
+        System.out.println("Quality of bracelet");
+    }
 }

@@ -21,4 +21,7 @@ public class Casio extends Clock{
     public void type(){
         System.out.println("Type of Clock");
     }
+    public void price(){
+        System.out.println("Price of clock");
+    }
 }

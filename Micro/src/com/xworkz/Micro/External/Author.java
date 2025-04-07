@@ -21,4 +21,7 @@ public class Author extends Textbook{
     public void type(){
         System.out.println("Type the textbook");
     }
+    public void study(){
+        System.out.println("Study the book");
+    }
 }

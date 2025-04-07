@@ -21,4 +21,7 @@ public class Bangalore extends City{
     public void type(){
         System.out.println("Types of people in city");
     }
+    public void roam(){
+        System.out.println("Roam in Bangalore");
+    }
 }
