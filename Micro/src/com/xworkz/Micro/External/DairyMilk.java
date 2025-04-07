@@ -21,4 +21,7 @@ public class DairyMilk extends Chocolate{
     public void flavor(){
         System.out.println("Flavors of chocolates");
     }
+    public void taste(){
+        System.out.println("Taste is so good");
+    }
 }

@@ -21,4 +21,7 @@ public class Diamond extends Ring{
     public void buy(){
         System.out.println("Buy the ring");
     }
+    public void purchase(){
+        System.out.println("Purchase the diamond ring");
+    }
 }

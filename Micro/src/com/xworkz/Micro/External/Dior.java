@@ -21,4 +21,7 @@ public class Dior extends Lipstick{
     public void type(){
         System.out.println("Type of Lipstick");
     }
+    public void company(){
+        System.out.println("Company of lipstick");
+    }
 }

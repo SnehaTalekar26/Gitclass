@@ -21,4 +21,7 @@ public class Crime extends Police{
     public void type(){
         System.out.println("Types of police");
     }
+    public void illegal(){
+        System.out.println("Illegal police somewhere");
+    }
 }

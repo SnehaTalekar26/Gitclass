@@ -21,4 +21,7 @@ public class Chaat extends Panipuri{
     public void type(){
         System.out.println("Types of panipuri");
     }
+    public void waste(){
+        System.out.println("Do not waste");
+    }
 }

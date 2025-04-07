@@ -21,4 +21,7 @@ public class Casual extends Tshirt{
     public void type(){
         System.out.println("Types of Tshirt");
     }
+    public void quality(){
+        System.out.println("Quality of Tshirt");
+    }
 }

@@ -21,4 +21,7 @@ public class Colgate extends Brush{
     public void clean(){
         System.out.println("Cleans the teeth");
     }
+    public void rub(){
+        System.out.println("Rub colgate on wound");
+    }
 }

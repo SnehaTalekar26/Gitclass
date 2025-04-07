@@ -21,4 +21,7 @@ public class Cpin extends Charger{
     public void connection(){
         System.out.println("Connect is necessary for charging");
     }
+    public void charge(){
+        System.out.println("Charge the device");
+    }
 }

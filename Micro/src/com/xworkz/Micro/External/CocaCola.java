@@ -21,4 +21,7 @@ public class CocaCola extends Colddrink{
     public void type(){
         System.out.println("Types of colddrink");
     }
+    public void sale(){
+        System.out.println("CocoCola is for sale");
+    }
 }
