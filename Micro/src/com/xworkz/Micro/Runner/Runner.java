@@ -1,6 +1,9 @@
 package com.xworkz.Micro.Runner;
 
+import com.sun.org.apache.xerces.internal.impl.xs.util.XSObjectListImpl;
+import com.xworkz.Micro.Casting.*;
 import com.xworkz.Micro.External.*;
+import sun.nio.ch.Net;
 
 public class Runner {
     public static void main(String[] args) {
@@ -31,6 +34,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Straw straw=new Straw();
+        straw.quality(juice);
+        straw.quality(mango);
+
+        System.out.println("--------------------------------");
+
         Plant plant=new Plant();
         plant.grow();
         plant.dead();
@@ -55,6 +64,12 @@ public class Runner {
         rose.seed();
         rose.dead();
         rose.leaves();
+
+        System.out.println("--------------------------------");
+
+        Grow grow=new Grow();
+        grow.water(plant);
+        grow.water(rose);
 
         System.out.println("--------------------------------");
 
@@ -85,6 +100,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Network network=new Network();
+        network.explore(sim);
+        network.explore(jio);
+
+        System.out.println("--------------------------------");
+
         Jacket jacket=new Jacket();
         jacket.open();
         jacket.close();
@@ -109,6 +130,12 @@ public class Runner {
         zip.wash();
         zip.borrow();
         zip.wear();
+
+        System.out.println("--------------------------------");
+
+        Leather leather=new Leather();
+        leather.put(jacket);
+        leather.put(zip);
 
         System.out.println("--------------------------------");
 
@@ -139,6 +166,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Dark dark=new Dark();
+        dark.getWet(rain);
+        dark.getWet(umbrella);
+
+        System.out.println("--------------------------------");
+
         Earphone earphone=new Earphone();
         earphone.purchase();
         earphone.connect();
@@ -163,6 +196,12 @@ public class Runner {
         bluetooth.mobile();
         bluetooth.device();
         bluetooth.share();
+
+        System.out.println("--------------------------------");
+
+        Device device=new Device();
+        device.deviceConnect(earphone);
+        device.deviceConnect(bluetooth);
 
         System.out.println("--------------------------------");
 
@@ -193,6 +232,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Customer customer=new Customer();
+        customer.sell(furniture);
+        customer.sell(wooden);
+
+        System.out.println("--------------------------------");
+
         Charger charger=new Charger();
         charger.connection();
         charger.socket();
@@ -217,6 +262,12 @@ public class Runner {
         cpin.phone();
         cpin.wire();
         cpin.current();
+
+        System.out.println("--------------------------------");
+
+        Wire wire=new Wire();
+        wire.adopter(charger);
+        wire.adopter(cpin);
 
         System.out.println("--------------------------------");
 
@@ -247,6 +298,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Socks socks=new Socks();
+        socks.smell(shoes);
+        socks.smell(puma);
+
+        System.out.println("--------------------------------");
+
         Brush brush=new Brush();
         brush.clean();
         brush.shoes();
@@ -271,6 +328,12 @@ public class Runner {
         colgate.purchase();
         colgate.wash();
         colgate.use();
+
+        System.out.println("--------------------------------");
+
+        WashBasin washBasin=new WashBasin();
+        washBasin.Basin(brush);
+        washBasin.Basin(colgate);
 
         System.out.println("--------------------------------");
 
@@ -301,6 +364,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Manufacture manufacture=new Manufacture();
+        manufacture.item(chocolate);
+        manufacture.item(dairyMilk);
+
+        System.out.println("--------------------------------");
+
         Fish fish=new Fish();
         fish.eat();
         fish.cut();
@@ -325,6 +394,12 @@ public class Runner {
         salmon.purchase();
         salmon.type();
         salmon.dish();
+
+        System.out.println("--------------------------------");
+
+        Market market=new Market();
+        market.sell(fish);
+        market.sell(salmon);
 
         System.out.println("--------------------------------");
 
@@ -355,6 +430,10 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        BlackBoard blackBoard=new BlackBoard();
+        blackBoard.write(board);
+        blackBoard.write(duster);
+
         Bag bag=new Bag();
         bag.wear();
         bag.carry();
@@ -379,6 +458,12 @@ public class Runner {
         nike.wash();
         nike.color();
         nike.buy();
+
+        System.out.println("--------------------------------");
+
+        Adidas adidas=new Adidas();
+        adidas.wear(bag);
+        adidas.wear(nike);
 
         System.out.println("--------------------------------");
 
@@ -409,6 +494,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Jewellery jewellery=new Jewellery();
+        jewellery.price(ring);
+        jewellery.price(diamond);
+
+        System.out.println("--------------------------------");
+
         Necklace necklace=new Necklace();
         necklace.wear();
         necklace.design();
@@ -436,6 +527,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Jewel jewel=new Jewel();
+        jewel.purchase(necklace);
+        jewel.purchase(gold);
+
+        System.out.println("-------------------------------");
+
         Gate gate=new Gate();
         gate.type();
         gate.design();
@@ -460,6 +557,12 @@ public class Runner {
         steel.wash();
         steel.color();
         steel.put();
+
+        System.out.println("--------------------------------");
+
+        Build build=new Build();
+        build.add(gate);
+        build.add(steel);
 
         System.out.println("--------------------------------");
 
@@ -544,6 +647,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        ClipBoard clipBoard=new ClipBoard();
+        clipBoard.clip(writingPad);
+        clipBoard.clip(notepad);
+
+        System.out.println("--------------------------------");
+
         Projector projector=new Projector();
         projector.type();
         projector.design();
@@ -568,6 +677,12 @@ public class Runner {
         dlp.use();
         dlp.color();
         dlp.clean();
+
+        System.out.println("--------------------------------");
+
+        Screen screen=new Screen();
+        screen.cast(projector);
+        screen.cast(dlp);
 
         System.out.println("--------------------------------");
 
@@ -598,6 +713,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Writer writer=new Writer();
+        writer.story(textbook);
+        writer.story(author);
+
+        System.out.println("--------------------------------");
+
         Hair hair=new Hair();
         hair.type();
         hair.curl();
@@ -622,6 +743,12 @@ public class Runner {
         wig.straight();
         wig.color();
         wig.style();
+
+        System.out.println("--------------------------------");
+
+        HairStyle hairStyle=new HairStyle();
+        hairStyle.style(hair);
+        hairStyle.style(wig);
 
         System.out.println("--------------------------------");
 
@@ -652,6 +779,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Luxury luxury=new Luxury();
+        luxury.buy(watch);
+        luxury.buy(rolex);
+
+        System.out.println("--------------------------------");
+
         Bracelet bracelet=new Bracelet();
         bracelet.type();
         bracelet.design();
@@ -679,6 +812,10 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Gift gift=new Gift();
+        gift.give(bracelet);
+        gift.give(cartier);
+
         Colddrink colddrink=new Colddrink();
         colddrink.type();
         colddrink.design();
@@ -703,6 +840,12 @@ public class Runner {
         cocaCola.show();
         cocaCola.color();
         cocaCola.drink();
+
+        System.out.println("--------------------------------");
+
+        Sponsor sponsor=new Sponsor();
+        sponsor.sell(colddrink);
+        sponsor.sell(cocaCola);
 
         System.out.println("--------------------------------");
 
@@ -733,6 +876,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Quality quality=new Quality();
+        quality.goodQuality(headphone);
+        quality.goodQuality(bose);
+
+        System.out.println("-------------------------------");
+
         Tshirt tshirt=new Tshirt();
         tshirt.type();
         tshirt.design();
@@ -759,6 +908,10 @@ public class Runner {
         casual.use();
 
         System.out.println("--------------------------------");
+
+        Wear wear=new Wear();
+        wear.out(tshirt);
+        wear.out(casual);
 
         Panipuri panipuri=new Panipuri();
         panipuri.type();
@@ -787,6 +940,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Sukapuri sukapuri=new Sukapuri();
+        sukapuri.drink(panipuri);
+        sukapuri.drink(chaat);
+
+        System.out.println("---------------------------------");
+
         MilkShake milkShake=new MilkShake();
         milkShake.type();
         milkShake.drink();
@@ -811,6 +970,12 @@ public class Runner {
         kitKat.taste();
         kitKat.color();
         kitKat.flavor();
+
+        System.out.println("--------------------------------");
+
+        Cold cold=new Cold();
+        cold.straw(milkShake);
+        cold.straw(kitKat);
 
         System.out.println("--------------------------------");
 
@@ -841,6 +1006,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Dive dive=new Dive();
+        dive.scuba(sea);
+        dive.scuba(arabian);
+
+        System.out.println("--------------------------------");
+
         Beach beach=new Beach();
         beach.type();
         beach.run();
@@ -868,6 +1039,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Sand sand=new Sand();
+        sand.mud(beach);
+        sand.mud(island);
+
+        System.out.println("-------------------------------");
+
         Country country=new Country();
         country.type();
         country.flag();
@@ -892,6 +1069,12 @@ public class Runner {
         india.travel();
         india.trees();
         india.population();
+
+        System.out.println("--------------------------------");
+
+        Travel travel=new Travel();
+        travel.Roam(country);
+        travel.Roam(india);
 
         System.out.println("--------------------------------");
 
@@ -922,6 +1105,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        BashyamCircle bashyamCircle=new BashyamCircle();
+        bashyamCircle.Xworkz(city);
+        bashyamCircle.Xworkz(bangalore);
+
+        System.out.println("---------------------------------");
+
         Shop shop=new Shop();
         shop.type();
         shop.location();
@@ -946,6 +1135,12 @@ public class Runner {
         ration.place();
         ration.things();
         ration.visit();
+
+        System.out.println("--------------------------------");
+
+        ShopKeeper shopKeeper=new ShopKeeper();
+        shopKeeper.sell(shop);
+        shopKeeper.sell(ration);
 
         System.out.println("--------------------------------");
 
@@ -976,6 +1171,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Sweets sweets=new Sweets();
+        sweets.eat(bakery);
+        sweets.eat(bakery);
+
+        System.out.println("--------------------------------");
+
         Center center=new Center();
         center.type();
         center.location();
@@ -1003,6 +1204,10 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Certificate certificate=new Certificate();
+        certificate.report(center);
+        certificate.report(training);
+
         Gym gym=new Gym();
         gym.type();
         gym.location();
@@ -1027,6 +1232,12 @@ public class Runner {
         workOut.place();
         workOut.dumbbells();
         workOut.visit();
+
+        System.out.println("--------------------------------");
+
+        Place place=new Place();
+        place.exercise(gym);
+        place.exercise(workOut);
 
         System.out.println("--------------------------------");
 
@@ -1057,6 +1268,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Battery battery=new Battery();
+        battery.charge(powerBank);
+        battery.charge(anker);
+
+        System.out.println("--------------------------------");
+
         Lipstick lipstick=new Lipstick();
         lipstick.type();
         lipstick.duration();
@@ -1081,6 +1298,12 @@ public class Runner {
         dior.brand();
         dior.color();
         dior.quality();
+
+        System.out.println("--------------------------------");
+
+        Shade shade=new Shade();
+        shade.match(lipstick);
+        shade.match(dior);
 
         System.out.println("--------------------------------");
 
@@ -1111,6 +1334,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Showroom showroom=new Showroom();
+        showroom.show(specks);
+        showroom.show(lensKart);
+
+        System.out.println("--------------------------------");
+
         Clock clock=new Clock();
         clock.type();
         clock.duration();
@@ -1138,6 +1367,10 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Time time=new Time();
+        time.look(clock);
+        time.look(casio);
+
         College college=new College();
         college.construction();
         college.library();
@@ -1162,6 +1395,12 @@ public class Runner {
         campus.lecturers();
         campus.students();
         campus.rating();
+
+        System.out.println("--------------------------------");
+
+        Attendance attendance=new Attendance();
+        attendance.compulsory(college);
+        attendance.compulsory(campus);
 
         System.out.println("--------------------------------");
 
@@ -1192,6 +1431,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Prayer prayer=new Prayer();
+        prayer.bell(temple);
+        prayer.bell(iskcon);
+
+        System.out.println("--------------------------------");
+
         History history=new History();
         history.book();
         history.people();
@@ -1216,6 +1461,12 @@ public class Runner {
         story.statue();
         story.type();
         story.rating();
+
+        System.out.println("--------------------------------");
+
+        Fighters fighters=new Fighters();
+        fighters.fights(history);
+        fighters.fights(story);
 
         System.out.println("--------------------------------");
 
@@ -1246,6 +1497,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Frame frame=new Frame();
+        frame.snap(photographer);
+        frame.snap(photos);
+
+        System.out.println("--------------------------------");
+
         Court court=new Court();
         court.judge();
         court.rules();
@@ -1270,6 +1527,12 @@ public class Runner {
         lawyer.law();
         lawyer.type();
         lawyer.rating();
+
+        System.out.println("--------------------------------");
+
+        HighCourt highCourt=new HighCourt();
+        highCourt.judgement(court);
+        highCourt.judgement(lawyer);
 
         System.out.println("--------------------------------");
 
@@ -1300,6 +1563,12 @@ public class Runner {
 
         System.out.println("--------------------------------");
 
+        Player player=new Player();
+        player.play(athlete);
+        player.play(sports);
+
+        System.out.println("--------------------------------");
+
         Police police=new Police();
         police.law();
         police.rules();
@@ -1324,5 +1593,44 @@ public class Runner {
         crime.strong();
         crime.type();
         crime.respect();
+
+        System.out.println("---------------------------------");
+
+        Legal legal=new Legal();
+        legal.jail(police);
+        legal.jail(crime);
+
+        System.out.println("--------------------------------");
+
+        Pencil pencil=new Pencil();
+        pencil.design();
+        pencil.use();
+        pencil.sharp();
+        pencil.type();
+        pencil.color();
+
+        System.out.println("--------------------------------");
+
+        Pencil pencil1=new Doms();
+        pencil1.design();
+        pencil1.use();
+        pencil1.sharp();
+        pencil1.type();
+        pencil1.color();
+
+        System.out.println("--------------------------------");
+
+        Doms doms=new Doms();
+        doms.design();
+        doms.use();
+        doms.sharp();
+        doms.type();
+        doms.color();
+
+        System.out.println("---------------------------------");
+
+        Pen pen=new Pen();
+        pen.length(pencil);
+        pen.length(doms);
     }
 }
