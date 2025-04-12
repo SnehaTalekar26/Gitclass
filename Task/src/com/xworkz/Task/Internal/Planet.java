@@ -15,4 +15,8 @@ public class Planet {
     public String toString(){
         return " Planet name: " + this.name + " ,Gravity: " + this.gravity + " HasLife: " + this.hasLife;
     }
+    @Override
+    public int hashCode(){
+        return 876;
+    }
 }

@@ -15,4 +15,8 @@ public class Remote {
     public String toString(){
         return " TVRemote model: " + this.model + " ,Voice Control: " + this.supportsVoiceControl + " ,Buttons: " + this.numberOfButtons;
     }
+    @Override
+    public int hashCode(){
+        return 916;
+    }
 }

@@ -15,4 +15,8 @@ public class Programming {
     public String toString(){
         return " Programming counter:"+this.counter+" ,Programming limit:"+this.limit+" ,Programming size:"+this.size;
     }
+    @Override
+    public int hashCode(){
+        return 873;
+    }
 }

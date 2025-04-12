@@ -15,4 +15,8 @@ public class Puzzle {
     public String toString(){
         return " Puzzle name: " + this.name + " , Level: " + this.level + " ,Is Challenging: " + this.isChallenging;
     }
+    @Override
+    public int hashCode(){
+        return 3;
+    }
 }

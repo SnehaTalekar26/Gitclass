@@ -15,4 +15,8 @@ public class Recipe {
     public String toString(){
         return " Recipe dish: " + this.dishName + " ,Prep Time: " + this.prepTime + " mins ,Servings: " + this.servings;
     }
+    @Override
+    public int hashCode(){
+        return 261;
+    }
 }

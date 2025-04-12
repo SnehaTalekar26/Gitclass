@@ -15,4 +15,8 @@ public class Projector {
     public String toString(){
         return " Projector resolution: " + this.resolution + " ,Brightness: " + this.brightness + " lumens ,Portable: " + this.isPortable;
     }
+    @Override
+    public int hashCode(){
+        return 83;
+    }
 }

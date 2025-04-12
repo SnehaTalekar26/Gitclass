@@ -15,4 +15,8 @@ public class Printer {
     public String toString(){
         return " Printer brand: " + this.brand + " ,Color Printer: " + this.isColor + " ,Print Speed: " + this.printSpeed + " ppm";
     }
+    @Override
+    public int hashCode(){
+        return 983;
+    }
 }

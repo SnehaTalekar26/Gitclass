@@ -15,4 +15,8 @@ public class Restaurant {
     public String toString(){
         return " Restaurant location: " + this.location + " ,NoOfTables: " + this.noOfTables + "IsVeg: " + this.isVeg;
     }
+    @Override
+    public int hashCode(){
+        return 76;
+    }
 }

@@ -15,4 +15,8 @@ public class Plant {
     public String toString(){
         return " Plant species: " + this.species + " ,Height: " + this.height + " cm ,Indoor: " + this.isIndoor;
     }
+    @Override
+    public int hashCode(){
+        return 2;
+    }
 }
