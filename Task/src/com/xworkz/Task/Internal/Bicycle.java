@@ -15,4 +15,8 @@ public class Bicycle {
     public String toString(){
         return " Bicycle type: " + this.type + " ,Gear Count: " + this.gearCount + " ,Has Bell: " + this.hasBell;
     }
+    @Override
+    public int hashCode(){
+        return 108;
+    }
 }

@@ -15,4 +15,8 @@ public class AlarmClock {
     public String toString(){
         return " AlarmClock brand: " + this.brand + " ,Snooze Feature: " + this.hasSnooze + " ,Display Type: " + this.displayType;
     }
+    @Override
+    public int hashCode(){
+        return 1;
+    }
 }

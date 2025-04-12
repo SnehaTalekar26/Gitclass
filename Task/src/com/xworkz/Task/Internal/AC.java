@@ -15,4 +15,8 @@ public class AC {
     public String toString(){
         return " AirConditioner brand: " + this.brand + " ,Tonnage: " + this.tonnage + " Ton ,Inverter: " + this.isInverter;
     }
+    @Override
+    public int hashCode(){
+        return 10;
+    }
 }

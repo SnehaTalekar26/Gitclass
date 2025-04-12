@@ -15,4 +15,8 @@ public class Alien {
     public String toString(){
         return " Alien species: " + this.speciesName + " ,Origin: " + this.planetOrigin + " ,Threat Level: " + this.threatLevel;
     }
+    @Override
+    public int hashCode(){
+        return 19;
+    }
 }

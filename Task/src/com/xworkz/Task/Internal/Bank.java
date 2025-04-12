@@ -15,4 +15,8 @@ public class Bank {
     public String toString(){
         return " Bank loan:"+this.loan+" ,Bank rate:"+this.rate+" ,Bank time:"+this.time;
     }
+    @Override
+    public int hashCode(){
+        return 100;
+    }
 }

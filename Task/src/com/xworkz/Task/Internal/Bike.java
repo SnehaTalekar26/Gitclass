@@ -15,4 +15,8 @@ public class Bike {
     public String toString(){
         return " Bike brand: " + this.brand + " ,Gears: " + this.gearCount + " ,Electric: " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 14;
+    }
 }

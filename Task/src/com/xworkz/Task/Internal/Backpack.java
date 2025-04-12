@@ -15,4 +15,8 @@ public class Backpack {
     public String toString(){
         return " Backpack brand: " + this.brand + " ,Compartments: " + this.compartments + " ,Laptop Slot: " + this.hasLaptopSlot;
     }
+    @Override
+    public int hashCode(){
+        return 20;
+    }
 }

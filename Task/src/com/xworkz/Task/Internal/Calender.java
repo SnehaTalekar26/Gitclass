@@ -15,4 +15,8 @@ public class Calender {
     public String toString(){
         return " Calendar year: " + this.year + " ,Type: " + this.type + " ,Leap Year: " + this.isLeapYear;
     }
+    @Override
+    public int hashCode(){
+        return 24;
+    }
 }
