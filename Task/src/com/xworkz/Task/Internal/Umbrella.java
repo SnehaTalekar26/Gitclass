@@ -15,4 +15,8 @@ public class Umbrella {
     public String toString(){
         return " Umbrella color: " + this.color + " ,Automatic: " + this.isAutomatic + " ,Size: " + this.size + " inches";
     }
+    @Override
+    public int hashCode(){
+        return 11;
+    }
 }

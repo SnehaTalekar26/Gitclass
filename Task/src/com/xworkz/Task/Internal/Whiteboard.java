@@ -15,4 +15,8 @@ public class Whiteboard {
     public String toString(){
         return " Whiteboard size: " + this.size + " ,Magnetic: " + this.isMagnetic + " ,Frame: " + this.frameMaterial;
     }
+    @Override
+    public int hashCode(){
+        return 31;
+    }
 }

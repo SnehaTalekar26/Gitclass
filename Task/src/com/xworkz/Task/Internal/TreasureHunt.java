@@ -15,4 +15,8 @@ public class TreasureHunt {
     public String toString(){
         return " TreasureHunt location: " + this.location + " ,Clue: " + this.clue + " ,Difficulty: " + this.difficulty;
     }
+    @Override
+    public int hashCode(){
+        return 9;
+    }
 }

@@ -15,4 +15,8 @@ public class Train {
     public String toString(){
         return " Train name: " + this.name + " ,Coaches: " + this.coaches + " ,High Speed: " + this.isHighSpeed;
     }
+    @Override
+    public int hashCode(){
+        return 39;
+    }
 }

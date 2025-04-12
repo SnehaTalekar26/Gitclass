@@ -15,4 +15,8 @@ public class WeatherReport {
     public String toString(){
         return " WeatherReport city: " + this.city + " ,Temperature: " + this.temperature + "°C ,Rainy: " + this.isRainy;
     }
+    @Override
+    public int hashCode(){
+        return 29;
+    }
 }

@@ -15,4 +15,8 @@ public class TravelBag {
     public String toString(){
         return " TravelBag brand: " + this.brand + " ,Capacity: " + this.capacity + "L ,Waterproof: " + this.isWaterproof;
     }
+    @Override
+    public int hashCode(){
+        return 101;
+    }
 }

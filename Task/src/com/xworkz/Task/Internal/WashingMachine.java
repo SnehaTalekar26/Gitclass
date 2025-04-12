@@ -15,4 +15,8 @@ public class WashingMachine {
     public String toString(){
         return " WashingMachine brand: " + this.brand + " ,Capacity: " + this.capacity + "kg ,Front Load: " + this.isFrontLoad;
     }
+    @Override
+    public int hashCode(){
+        return 23;
+    }
 }

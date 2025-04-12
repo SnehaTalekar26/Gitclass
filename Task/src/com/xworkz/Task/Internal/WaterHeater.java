@@ -15,4 +15,8 @@ public class WaterHeater {
     public String toString(){
         return " WaterHeater brand: " + this.brand + " ,Capacity: " + this.capacity + "L ,Instant: " + this.isInstant;
     }
+    @Override
+    public int hashCode(){
+        return 38;
+    }
 }
