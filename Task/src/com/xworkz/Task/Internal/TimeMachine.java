@@ -15,4 +15,8 @@ public class TimeMachine {
     public String toString(){
         return " TimeMachine destination: " + this.destinationYear + " ,Operator: " + this.operatorName + " ,Fuel Level: " + this.fuelLevel + "%";
     }
+    @Override
+    public int hashCode(){
+        return 112;
+    }
 }

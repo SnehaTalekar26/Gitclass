@@ -15,4 +15,8 @@ public class Theater {
     public String toString(){
         return " Theater movieName: " + this.movieName + " ,NoOfSeats: " + this.noOfSeats + "Is3DAvailable: " + this.is3DAvailable;
     }
+    @Override
+    public int hashCode(){
+        return 66;
+    }
 }

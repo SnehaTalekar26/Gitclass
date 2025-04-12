@@ -15,4 +15,8 @@ public class Tablet {
     public String toString(){
         return " Tablet brand: " + this.brand + " ,Screen Size: " + this.screenSize + " inches ,Supports Pen: " + this.supportsPen;
     }
+    @Override
+    public int hashCode(){
+        return 11;
+    }
 }

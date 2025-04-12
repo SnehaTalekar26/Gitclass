@@ -15,4 +15,8 @@ public class Student {
     public String toString(){
         return " Student name: " + this.name + " ,Age: " + this.age + " ,Grade: " + this.grade;
     }
+    @Override
+    public int hashCode(){
+        return 4;
+    }
 }

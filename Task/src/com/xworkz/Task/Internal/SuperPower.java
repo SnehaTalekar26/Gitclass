@@ -15,4 +15,8 @@ public class SuperPower {
     public String toString(){
         return " Superpower name: " + this.powerName + " ,Type: " + this.type + " ,Intensity Level: " + this.intensityLevel;
     }
+    @Override
+    public int hashCode(){
+        return 13;
+    }
 }

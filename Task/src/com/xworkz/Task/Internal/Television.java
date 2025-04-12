@@ -15,4 +15,8 @@ public class Television {
     public String toString(){
         return " Television brand: " + this.brand + " ,Screen Size: " + this.screenSize + " inches ,Smart TV: " + this.isSmart;
     }
+    @Override
+    public int hashCode(){
+        return 22;
+    }
 }

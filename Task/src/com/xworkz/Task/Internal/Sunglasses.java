@@ -15,4 +15,8 @@ public class Sunglasses {
     public String toString(){
         return " Sunglasses brand: " + this.brand + " ,Lens Color: " + this.lensColor + " ,Polarized: " + this.isPolarized;
     }
+    @Override
+    public int hashCode(){
+        return 14;
+    }
 }

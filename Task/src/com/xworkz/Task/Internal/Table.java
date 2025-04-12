@@ -15,4 +15,8 @@ public class Table {
     public String toString(){
         return " Table material: " + this.material + " ,Height: " + this.height + "cm ,Foldable: " + this.isFoldable;
     }
+    @Override
+    public int hashCode(){
+        return 12;
+    }
 }

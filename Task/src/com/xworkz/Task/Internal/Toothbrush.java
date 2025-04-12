@@ -15,4 +15,8 @@ public class Toothbrush {
     public String toString(){
         return " Toothbrush brand: " + this.brand + " ,Electric: " + this.isElectric + " ,Color: " + this.color;
     }
+    @Override
+    public int hashCode(){
+        return 609;
+    }
 }
