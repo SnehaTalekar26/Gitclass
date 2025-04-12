@@ -15,4 +15,8 @@ public class CoffeeMug {
     public String toString(){
         return " CoffeeMug color: " + this.color + " ,Capacity: " + this.capacity + "ml ,Has Lid: " + this.hasLid;
     }
+    @Override
+    public int hashCode(){
+        return 71;
+    }
 }

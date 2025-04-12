@@ -15,4 +15,8 @@ public class Cooking {
     public String toString(){
         return " Cooking flour:"+this.flour+" ,Cooking water:"+this.water+" ,Cooking sugar:"+this.sugar;
     }
+    @Override
+    public int hashCode(){
+        return 33;
+    }
 }

@@ -15,4 +15,8 @@ public class Chess {
     public String toString(){
         return " Chess Player 1: " + this.playerOne + " ,Chess Player 2: " + this.playerTwo + " ,Chess Duration: " + this.duration + " mins";
     }
+    @Override
+    public int hashCode(){
+        return 91;
+    }
 }

@@ -15,4 +15,8 @@ public class College {
     public String toString(){
         return " College principalName: " + this.principalName + " ,NoOfStudents: " + this.noOfStudents + "IsAutonomous: " + this.isAutonomous;
     }
+    @Override
+    public int hashCode(){
+        return 7;
+    }
 }

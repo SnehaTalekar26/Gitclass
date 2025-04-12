@@ -15,4 +15,8 @@ public class Chemistry {
     public String toString(){
         return " Chemistry pressure:"+this.pressure+" ,Chemistry volume:"+this.volume+" ,Chemistry temperature:"+this.temperature;
     }
+    @Override
+    public int hashCode(){
+        return 8;
+    }
 }

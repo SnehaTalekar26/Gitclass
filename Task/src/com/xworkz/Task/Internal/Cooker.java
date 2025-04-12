@@ -15,4 +15,8 @@ public class Cooker {
     public String toString(){
         return " Cooker type: " + this.type + " ,Capacity: " + this.capacity + " L ,Electric: " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 30;
+    }
 }

@@ -15,4 +15,8 @@ public class Cupboard {
     public String toString(){
         return " Cupboard shelves: " + this.shelves + " ,Material: " + this.material + " ,Has Mirror: " + this.hasMirror;
     }
+    @Override
+    public int hashCode(){
+        return 28;
+    }
 }

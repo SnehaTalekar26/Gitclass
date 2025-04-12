@@ -15,4 +15,8 @@ public class Cricket {
     public String toString(){
         return " Cricket runs:"+this.runs+" ,Cricket balls:"+this.balls+" ,Cricket strikeRate:"+this.strikeRate;
     }
+    @Override
+    public int hashCode(){
+        return 38;
+    }
 }

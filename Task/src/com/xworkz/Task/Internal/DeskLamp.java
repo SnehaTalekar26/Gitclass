@@ -15,4 +15,8 @@ public class DeskLamp {
     public String toString(){
         return " DeskLamp color: " + this.color + " ,Brightness Level: " + this.brightnessLevel + " ,Rechargeable: " + this.isRechargeable;
     }
+    @Override
+    public int hashCode(){
+        return 60;
+    }
 }
