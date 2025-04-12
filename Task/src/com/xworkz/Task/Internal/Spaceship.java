@@ -15,4 +15,8 @@ public class Spaceship {
     public String toString(){
         return " Spaceship model: " + this.model + " ,Capacity: " + this.capacity + " people ,Interstellar: " + this.isInterstellar;
     }
+    @Override
+    public int hashCode(){
+        return 8;
+    }
 }

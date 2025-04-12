@@ -15,4 +15,8 @@ public class SecretMission {
     public String toString(){
         return " SecretMission code: " + this.codeName + " ,Objective: " + this.objective + " ,Risk Level: " + this.riskLevel;
     }
+    @Override
+    public int hashCode(){
+        return 787;
+    }
 }

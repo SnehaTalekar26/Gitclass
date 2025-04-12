@@ -15,4 +15,8 @@ public class Salary {
     public String toString(){
         return " Salary base:"+this.base+" ,Salary bonus:"+this.bonus+" ,Salary total:"+this.total;
     }
+    @Override
+    public int hashCode(){
+        return 82;
+    }
 }

@@ -15,4 +15,8 @@ public class Robot {
     public String toString(){
         return " Robot name: " + this.name + " ,Battery Life: " + this.batteryLife + " hours ,AI Enabled: " + this.hasAI;
     }
+    @Override
+    public int hashCode(){
+        return 87;
+    }
 }

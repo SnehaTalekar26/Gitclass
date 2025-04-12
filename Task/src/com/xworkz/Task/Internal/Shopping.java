@@ -15,4 +15,8 @@ public class Shopping {
     public String toString(){
         return " Shopping quantity:"+this.quantity+" ,Shopping price:"+this.price+" ,Shopping totalCost:"+this.totalCost;
     }
+    @Override
+    public int hashCode(){
+        return 86;
+    }
 }

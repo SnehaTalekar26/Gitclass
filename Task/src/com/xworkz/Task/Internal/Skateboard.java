@@ -15,4 +15,8 @@ public class Skateboard {
     public String toString(){
         return " Skateboard material: " + this.deckMaterial + " ,Wheel Size: " + this.wheelSize + "mm ,Electric: " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 70;
+    }
 }

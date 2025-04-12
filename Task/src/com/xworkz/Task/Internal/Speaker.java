@@ -15,4 +15,8 @@ public class Speaker {
     public String toString(){
         return " Speaker brand: " + this.brand + " ,Wattage: " + this.wattage + "W ,Bluetooth: " + this.isBluetooth;
     }
+    @Override
+    public int hashCode(){
+        return 6;
+    }
 }

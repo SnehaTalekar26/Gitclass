@@ -15,4 +15,8 @@ public class Song {
     public String toString(){
         return " Song name: " + this.name + " ,Artist: " + this.artist + " ,Duration: " + this.duration + " mins";
     }
+    @Override
+    public int hashCode(){
+        return 9;
+    }
 }

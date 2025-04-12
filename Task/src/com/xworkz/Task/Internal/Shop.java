@@ -15,4 +15,8 @@ public class Shop {
     public String toString(){
         return " Shop name: " + this.name + " ,NoOfCustomers: " + this.noOfCustomers + "IsFamous: " + this.isFamous;
     }
+    @Override
+    public int hashCode(){
+        return 192;
+    }
 }
