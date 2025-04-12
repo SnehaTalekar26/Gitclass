@@ -15,4 +15,8 @@ public class Fan {
     public String toString(){
         return " Fan brand: " + this.brand + " ,Speed Levels: " + this.speedLevels + " ,Ceiling Fan: " + this.isCeilingFan;
     }
+    @Override
+    public int hashCode(){
+        return 64;
+    }
 }

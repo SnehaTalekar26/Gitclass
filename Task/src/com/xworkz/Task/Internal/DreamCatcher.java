@@ -15,4 +15,8 @@ public class DreamCatcher {
     public String toString(){
         return " DreamCatcher color: " + this.color + " ,Diameter: " + this.diameter + " cm ,Handmade: " + this.isHandmade;
     }
+    @Override
+    public int hashCode(){
+        return 66;
+    }
 }

@@ -15,4 +15,8 @@ public class Emoji {
     public String toString(){
         return " Emoji: " + this.symbol + " ,Meaning: " + this.meaning + " ,Animated: " + this.isAnimated;
     }
+    @Override
+    public int hashCode(){
+        return 64;
+    }
 }

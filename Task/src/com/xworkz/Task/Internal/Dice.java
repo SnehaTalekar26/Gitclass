@@ -15,4 +15,8 @@ public class Dice {
     public String toString(){
         return " Dice noOfDice:"+this.noOfDice+" ,Dice outcomes:"+this.outcomes+" ,Dice probability:"+this.probability;
     }
+    @Override
+    public int hashCode(){
+        return 77;
+    }
 }

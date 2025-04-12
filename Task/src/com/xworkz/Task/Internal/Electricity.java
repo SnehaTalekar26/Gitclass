@@ -15,4 +15,8 @@ public class Electricity {
     public String toString(){
         return " Electricity voltage:"+this.voltage+" ,Electricity current:"+this.current+" ,Electricity circumference:"+this.circumference;
     }
+    @Override
+    public int hashCode(){
+        return 102;
+    }
 }

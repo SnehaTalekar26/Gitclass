@@ -15,4 +15,8 @@ public class Finance {
     public String toString(){
         return " Finance amount:" + this.amount + " ,Finance interest:" + this.interest + " ,Finance duration:" + this.duration;
     }
+    @Override
+    public int hashCode(){
+        return 122;
+    }
 }

@@ -15,4 +15,8 @@ public class Family {
     public String toString(){
         return " Family sonAge:"+this.sonAge+" ,Family motherAge:"+this.motherAge+" ,Family fatherAge:"+this.fatherAge;
     }
+    @Override
+    public int hashCode(){
+        return 78;
+    }
 }

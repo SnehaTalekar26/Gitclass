@@ -15,4 +15,8 @@ public class DreamLog {
     public String toString(){
         return " DreamLog title: " + this.dreamTitle + " ,Mood: " + this.mood + " ,Duration: " + this.duration + " mins";
     }
+    @Override
+    public int hashCode(){
+        return 88;
+    }
 }

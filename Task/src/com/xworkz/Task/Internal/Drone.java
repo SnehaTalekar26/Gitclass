@@ -15,4 +15,8 @@ public class Drone {
     public String toString(){
         return " Drone model: " + this.model + " ,Flight Time: " + this.flightTime + " mins ,Has Camera: " + this.hasCamera;
     }
+    @Override
+    public int hashCode(){
+        return 97;
+    }
 }

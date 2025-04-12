@@ -15,4 +15,8 @@ public class EscapeRoom {
     public String toString(){
         return " EscapeRoom theme: " + this.theme + " ,Level: " + this.level + " ,Time Limit: " + this.timeLimit + " mins";
     }
+    @Override
+    public int hashCode(){
+        return 38;
+    }
 }
