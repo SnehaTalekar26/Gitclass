@@ -15,4 +15,8 @@ public class Oven {
     public String toString(){
         return " Oven brand: " + this.brand + " ,Capacity: " + this.capacity + "L ,Convection: " + this.isConvection;
     }
+    @Override
+    public int hashCode(){
+        return 71;
+    }
 }

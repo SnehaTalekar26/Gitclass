@@ -15,4 +15,8 @@ public class Museum {
     public String toString(){
         return " Museum curatorName: " + this.curatorName + " ,NoOfArtifacts: " + this.noOfArtifacts + "IsGuidedTourAvailable: " + this.isGuidedTourAvailable;
     }
+    @Override
+    public int hashCode(){
+        return 86;
+    }
 }

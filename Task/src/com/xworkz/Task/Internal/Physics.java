@@ -15,4 +15,8 @@ public class Physics {
     public String toString(){
         return " Physics Distance:"+this.distance+" ,Physics Speed:"+this.speed+" ,Physics Time:"+this.time;
     }
+    @Override
+    public int hashCode(){
+        return 87;
+    }
 }

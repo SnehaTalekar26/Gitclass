@@ -15,4 +15,8 @@ public class Notebook {
     public String toString(){
         return " Notebook subject: " + this.subject + " ,Pages: " + this.pages + " ,Ruled: " + this.isRuled;
     }
+    @Override
+    public int hashCode(){
+        return 124;
+    }
 }

@@ -15,4 +15,8 @@ public class MusicTrack {
     public String toString(){
         return " MusicTrack title: " + this.title + " ,Artist: " + this.artist + " ,Duration: " + this.duration + " seconds";
     }
+    @Override
+    public int hashCode(){
+        return 612;
+    }
 }

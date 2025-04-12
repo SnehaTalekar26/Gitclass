@@ -15,4 +15,8 @@ public class Pen {
     public String toString(){
         return " Pen brand: " + this.brand + " ,Color: " + this.color + " ,Gel Pen: " + this.isGel;
     }
+    @Override
+    public int hashCode(){
+        return 873;
+    }
 }

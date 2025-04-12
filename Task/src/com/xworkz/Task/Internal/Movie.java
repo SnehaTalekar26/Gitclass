@@ -15,4 +15,8 @@ public class Movie {
     public String toString(){
         return " Movie title: " + this.title + " ,Director: " + this.director + " ,Duration: " + this.duration + " mins";
     }
+    @Override
+    public int hashCode(){
+        return 67;
+    }
 }

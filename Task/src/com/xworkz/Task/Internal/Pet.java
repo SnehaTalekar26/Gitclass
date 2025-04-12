@@ -15,4 +15,8 @@ public class Pet {
     public String toString(){
         return " Pet name: " + this.name + " ,Species: " + this.species + " ,Age: " + this.age + " years";
     }
+    @Override
+    public int hashCode(){
+        return 839;
+    }
 }
