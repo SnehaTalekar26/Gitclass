@@ -15,4 +15,8 @@ public class Game {
     public String toString(){
         return " Game name: " + this.name + " ,Genre: " + this.genre + " ,Players: " + this.players;
     }
+    @Override
+    public int hashCode(){
+        return 111;
+    }
 }

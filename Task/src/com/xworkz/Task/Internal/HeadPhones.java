@@ -15,4 +15,8 @@ public class HeadPhones {
     public String toString(){
         return " Headphones brand: " + this.brand + " ,Wireless: " + this.isWireless + " ,Battery Life: " + this.batteryLife + " hrs";
     }
+    @Override
+    public int hashCode(){
+        return 84;
+    }
 }

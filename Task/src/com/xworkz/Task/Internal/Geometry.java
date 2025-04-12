@@ -15,4 +15,8 @@ public class Geometry {
     public String toString(){
         return " Geometry base:"+this.base+" ,Geometry height:"+this.height+" ,Geometry area:"+this.area;
     }
+    @Override
+    public int hashCode(){
+        return 123;
+    }
 }

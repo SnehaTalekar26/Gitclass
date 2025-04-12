@@ -15,4 +15,8 @@ public class Hospital {
     public String toString(){
         return " Hospital doctorName: " + this.doctorName + " ,NoOfPatients: " + this.noOfPatients + "IsEmergencyAvailable: " + this.isEmergencyAvailable;
     }
+    @Override
+    public int hashCode(){
+        return 43;
+    }
 }

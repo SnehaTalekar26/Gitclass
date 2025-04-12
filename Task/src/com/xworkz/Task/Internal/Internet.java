@@ -15,4 +15,8 @@ public class Internet {
     public String toString(){
         return " Internet dataUsed:"+this.dataUsed+" ,Internet Speed:"+this.Speed+" ,Internet Time:"+this.Time;
     }
+    @Override
+    public int hashCode(){
+        return 67;
+    }
 }

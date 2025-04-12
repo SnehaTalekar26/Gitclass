@@ -15,4 +15,8 @@ public class Instrument {
     public String toString(){
         return " Instrument name: " + this.name + " ,Type: " + this.type + " ,Electric: " + this.isElectric;
     }
+    @Override
+    public int hashCode(){
+        return 786;
+    }
 }

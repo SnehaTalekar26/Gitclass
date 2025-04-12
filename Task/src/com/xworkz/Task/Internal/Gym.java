@@ -15,4 +15,8 @@ public class Gym {
     public String toString(){
         return " Gym trainerName: " + this.trainerName + " ,NoOfMembers: " + this.noOfMembers + "IsOpen24Hours: " + this.isOpen24Hours;
     }
+    @Override
+    public int hashCode(){
+        return 98;
+    }
 }

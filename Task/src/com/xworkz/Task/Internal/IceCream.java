@@ -15,4 +15,8 @@ public class IceCream {
     public String toString(){
         return " IceCream flavor: " + this.flavor + " ,Scoops: " + this.scoops + " ,Toppings: " + this.hasToppings;
     }
+    @Override
+    public int hashCode(){
+        return 476;
+    }
 }

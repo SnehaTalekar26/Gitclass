@@ -15,4 +15,8 @@ public class Guitar {
     public String toString(){
         return " Guitar type: " + this.type + " ,Strings: " + this.numberOfStrings + " ,Brand: " + this.brand;
     }
+    @Override
+    public int hashCode(){
+        return 79;
+    }
 }
