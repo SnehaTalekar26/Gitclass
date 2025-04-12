@@ -15,4 +15,8 @@ public class Library {
     public String toString(){
         return " Library title: " + this.title + " ,NoOfBooks: " + this.noOfBooks + "IsOpen: " + this.isOpen;
     }
+    @Override
+    public int hashCode(){
+        return 46;
+    }
 }

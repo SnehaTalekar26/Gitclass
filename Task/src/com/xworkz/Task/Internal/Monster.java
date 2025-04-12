@@ -15,4 +15,8 @@ public class Monster {
     public String toString(){
         return " Monster name: " + this.name + " ,Scare Level: " + this.scareLevel + " ,Has Wings: " + this.hasWings;
     }
+    @Override
+    public int hashCode(){
+        return 827;
+    }
 }

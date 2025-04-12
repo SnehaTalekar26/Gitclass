@@ -15,4 +15,8 @@ public class Microscope {
     public String toString(){
         return " Microscope model: " + this.model + " ,Magnification: " + this.magnification + "x ,Digital: " + this.isDigital;
     }
+    @Override
+    public int hashCode(){
+        return 67;
+    }
 }

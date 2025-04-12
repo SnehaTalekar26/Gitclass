@@ -15,4 +15,8 @@ public class Keyboard {
     public String toString(){
         return " Keyboard type: " + this.type + " ,Mechanical: " + this.isMechanical + " ,Layout: " + this.layout;
     }
+    @Override
+    public int hashCode(){
+        return 4676;
+    }
 }

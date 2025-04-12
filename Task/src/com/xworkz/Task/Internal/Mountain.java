@@ -15,4 +15,8 @@ public class Mountain {
     public String toString(){
         return " Mountain name: " + this.name + " ,Height: " + this.height + " meters ,Snow Covered: " + this.hasSnow;
     }
+    @Override
+    public int hashCode(){
+        return 874;
+    }
 }

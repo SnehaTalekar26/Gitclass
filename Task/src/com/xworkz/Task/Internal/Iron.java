@@ -15,4 +15,8 @@ public class Iron {
     public String toString(){
         return " Iron type: " + this.type + " ,Power: " + this.power + "W ,Steam Function: " + this.hasSteamFunction;
     }
+    @Override
+    public int hashCode(){
+        return 93;
+    }
 }
