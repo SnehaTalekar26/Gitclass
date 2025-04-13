@@ -19,4 +19,18 @@ public class Microwave {
     public int hashCode(){
         return 72;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Microwave){
+            Microwave microwave1=this;
+            Microwave microwave2=(Microwave) obj;
+            if(microwave1.brand==microwave1.brand && microwave2.power==microwave2.power){
+                return true;
+            }
+        }
+        return false;
+    }
 }

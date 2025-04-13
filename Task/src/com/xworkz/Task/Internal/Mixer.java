@@ -19,4 +19,19 @@ public class Mixer {
     public int hashCode(){
         return 89;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Mixer){
+            Mixer mixer1=this;
+            Mixer mixer2=(Mixer) obj;
+            if(mixer1.brand==mixer1.brand && mixer2.speedLevels==mixer2.speedLevels){
+                return true;
+            }
+        }
+        return false;
+    }
 }
+

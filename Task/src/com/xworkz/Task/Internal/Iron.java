@@ -19,4 +19,18 @@ public class Iron {
     public int hashCode(){
         return 93;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Iron){
+            Iron iron1=this;
+            Iron iron2=(Iron) obj;
+            if(iron1.type==iron1.type && iron2.power==iron2.power){
+                return true;
+            }
+        }
+        return false;
+    }
 }

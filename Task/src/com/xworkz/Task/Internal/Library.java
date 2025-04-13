@@ -19,4 +19,18 @@ public class Library {
     public int hashCode(){
         return 46;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Library){
+            Library library1=this;
+            Library library2=(Library) obj;
+            if(library1.title==library1.title && library2.noOfBooks==library2.noOfBooks){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -1,5 +1,7 @@
 package com.xworkz.Task.Internal;
 
+import java.rmi.Naming;
+
 public class Microscope {
     private String model;
     private int magnification;
@@ -18,5 +20,19 @@ public class Microscope {
     @Override
     public int hashCode(){
         return 67;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Microscope){
+            Microscope microscope1=this;
+            Microscope microscope2=(Microscope) obj;
+            if(microscope1.model==microscope1.model && microscope2.magnification==microscope2.magnification){
+                return true;
+            }
+        }
+        return false;
     }
 }

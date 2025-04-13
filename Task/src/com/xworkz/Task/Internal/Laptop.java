@@ -19,4 +19,18 @@ public class Laptop {
     public int hashCode(){
         return 78;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Laptop){
+            Laptop laptop1=this;
+            Laptop laptop2=(Laptop) obj;
+            if(laptop1.brand==laptop1.brand && laptop2.ram==laptop2.ram){
+                return true;
+            }
+        }
+        return false;
+    }
 }

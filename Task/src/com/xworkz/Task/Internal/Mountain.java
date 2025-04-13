@@ -19,4 +19,18 @@ public class Mountain {
     public int hashCode(){
         return 874;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Mountain){
+            Mountain mountain1=this;
+            Mountain mountain2=(Mountain) obj;
+            if(mountain1.name==mountain1.name && mountain2.height==mountain2.height){
+                return true;
+            }
+        }
+        return false;
+    }
 }
