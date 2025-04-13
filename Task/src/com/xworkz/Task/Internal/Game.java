@@ -19,4 +19,18 @@ public class Game {
     public int hashCode(){
         return 111;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Game){
+            Game game1=this;
+            Game game2=(Game) obj;
+            if(game1.name==game1.name && game2.genre==game2.genre){
+                return true;
+            }
+        }
+        return false;
+    }
 }

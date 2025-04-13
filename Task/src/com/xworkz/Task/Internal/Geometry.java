@@ -19,4 +19,18 @@ public class Geometry {
     public int hashCode(){
         return 123;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Geometry){
+            Geometry geometry1=this;
+            Geometry geometry2=(Geometry) obj;
+            if(geometry1.base==geometry1.base && geometry2.height==geometry2.height){
+                return true;
+            }
+        }
+        return false;
+    }
 }

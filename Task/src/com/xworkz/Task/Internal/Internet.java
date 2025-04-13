@@ -19,4 +19,18 @@ public class Internet {
     public int hashCode(){
         return 67;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Internet){
+            Internet internet1=this;
+            Internet internet2=(Internet) obj;
+            if(internet1.dataUsed==internet1.dataUsed && internet2.Speed==internet2.Speed){
+                return true;
+            }
+        }
+        return false;
+    }
 }

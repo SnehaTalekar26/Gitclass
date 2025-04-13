@@ -19,4 +19,18 @@ public class Guitar {
     public int hashCode(){
         return 79;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Guitar){
+            Guitar guitar1=this;
+            Guitar guitar2=(Guitar) obj;
+            if(guitar1.brand==guitar1.brand && guitar2.numberOfStrings==guitar2.numberOfStrings){
+                return true;
+            }
+        }
+        return false;
+    }
 }

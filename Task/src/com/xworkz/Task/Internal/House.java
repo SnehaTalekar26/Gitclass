@@ -19,4 +19,18 @@ public class House {
     public int hashCode(){
         return 26;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof House){
+            House house1=this;
+            House house2=(House) obj;
+            if(house1.address==house1.address && house2.numberOfRooms==house2.numberOfRooms){
+                return true;
+            }
+        }
+        return false;
+    }
 }

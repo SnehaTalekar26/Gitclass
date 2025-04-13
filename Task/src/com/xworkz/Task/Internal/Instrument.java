@@ -19,4 +19,18 @@ public class Instrument {
     public int hashCode(){
         return 786;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Instrument){
+            Instrument instrument1=this;
+            Instrument instrument2=(Instrument) obj;
+            if(instrument1.name==instrument1.name && instrument2.type==instrument2.type){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class HeadPhones {
     public int hashCode(){
         return 84;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof HeadPhones){
+            HeadPhones headPhones1=this;
+            HeadPhones headPhones2=(HeadPhones) obj;
+            if(headPhones1.brand==headPhones1.brand && headPhones2.isWireless==headPhones2.isWireless){
+                return true;
+            }
+        }
+        return false;
+    }
 }
