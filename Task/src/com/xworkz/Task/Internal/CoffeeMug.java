@@ -19,4 +19,18 @@ public class CoffeeMug {
     public int hashCode(){
         return 71;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof CoffeeMug){
+            CoffeeMug coffeeMug1=this;
+            CoffeeMug coffeeMug2=(CoffeeMug) obj;
+            if(coffeeMug1.color==coffeeMug1.color && coffeeMug2.capacity==coffeeMug2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

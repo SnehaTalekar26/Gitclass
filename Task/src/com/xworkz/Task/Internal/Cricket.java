@@ -19,4 +19,18 @@ public class Cricket {
     public int hashCode(){
         return 38;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Cricket){
+            Cricket cricket1=this;
+            Cricket cricket2=(Cricket) obj;
+            if(cricket1.runs==cricket1.runs && cricket2.balls==cricket2.balls){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class Cooker {
     public int hashCode(){
         return 30;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Cooker){
+            Cooker cooker1=this;
+            Cooker cooker2=(Cooker) obj;
+            if(cooker1.type==cooker1.type && cooker2.capacity==cooker2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

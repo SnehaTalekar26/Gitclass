@@ -19,4 +19,18 @@ public class Car {
     public int hashCode(){
         return 7;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Car){
+            Car car1=this;
+            Car car2=(Car) obj;
+            if(car1.model==car1.model && car2.color==car2.color){
+                return true;
+            }
+        }
+        return false;
+    }
 }

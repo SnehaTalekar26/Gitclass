@@ -19,4 +19,18 @@ public class College {
     public int hashCode(){
         return 7;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof College){
+            College college1=this;
+            College college2=(College) obj;
+            if(college1.principalName==college1.principalName && college2.noOfStudents==college2.noOfStudents){
+                return true;
+            }
+        }
+        return false;
+    }
 }

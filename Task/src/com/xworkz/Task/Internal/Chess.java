@@ -19,4 +19,18 @@ public class Chess {
     public int hashCode(){
         return 91;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Chess){
+            Chess chess1=this;
+            Chess chess2=(Chess) obj;
+            if(chess1.playerOne==chess1.playerOne && chess2.playerTwo==chess2.playerTwo){
+                return true;
+            }
+        }
+        return false;
+    }
 }
