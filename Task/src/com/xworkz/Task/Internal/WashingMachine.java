@@ -19,4 +19,18 @@ public class WashingMachine {
     public int hashCode(){
         return 23;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof WashingMachine){
+            WashingMachine washingMachine1=this;
+            WashingMachine washingMachine2=(WashingMachine) obj;
+            if(washingMachine1.brand==washingMachine1.brand && washingMachine2.capacity==washingMachine2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

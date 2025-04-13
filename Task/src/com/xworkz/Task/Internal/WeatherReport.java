@@ -19,4 +19,18 @@ public class WeatherReport {
     public int hashCode(){
         return 29;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof WeatherReport){
+            WeatherReport weatherReport1=this;
+            WeatherReport weatherReport2=(WeatherReport) obj;
+            if(weatherReport1.city==weatherReport1.city && weatherReport2.temperature==weatherReport2.temperature){
+                return true;
+            }
+        }
+        return false;
+    }
 }

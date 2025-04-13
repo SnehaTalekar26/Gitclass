@@ -19,4 +19,18 @@ public class Watch {
     public int hashCode(){
         return 62;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Watch){
+            Watch watch1=this;
+            Watch watch2=(Watch) obj;
+            if(watch1.brand==watch1.brand && watch2.isDigital==watch2.isDigital){
+                return true;
+            }
+        }
+        return false;
+    }
 }

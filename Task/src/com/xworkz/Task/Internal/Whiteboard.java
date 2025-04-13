@@ -19,4 +19,18 @@ public class Whiteboard {
     public int hashCode(){
         return 31;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Whiteboard){
+            Whiteboard whiteboard1=this;
+            Whiteboard whiteboard2=(Whiteboard) obj;
+            if(whiteboard1.size==whiteboard1.size && whiteboard2.isMagnetic==whiteboard2.isMagnetic){
+                return true;
+            }
+        }
+        return false;
+    }
 }

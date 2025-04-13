@@ -19,4 +19,18 @@ public class TreasureHunt {
     public int hashCode(){
         return 9;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof TreasureHunt){
+            TreasureHunt treasureHunt1=this;
+            TreasureHunt treasureHunt2=(TreasureHunt) obj;
+            if(treasureHunt1.location==treasureHunt1.location && treasureHunt2.clue==treasureHunt2.clue){
+                return true;
+            }
+        }
+        return false;
+    }
 }

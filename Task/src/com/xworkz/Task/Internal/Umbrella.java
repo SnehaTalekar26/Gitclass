@@ -19,4 +19,18 @@ public class Umbrella {
     public int hashCode(){
         return 11;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Umbrella){
+            Umbrella umbrella1=this;
+            Umbrella umbrella2=(Umbrella) obj;
+            if(umbrella1.color==umbrella1.color && umbrella2.isAutomatic==umbrella2.isAutomatic){
+                return true;
+            }
+        }
+        return false;
+    }
 }

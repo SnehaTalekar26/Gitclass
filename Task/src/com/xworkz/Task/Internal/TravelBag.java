@@ -19,4 +19,18 @@ public class TravelBag {
     public int hashCode(){
         return 101;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof TravelBag){
+            TravelBag travelBag1=this;
+            TravelBag travelBag2=(TravelBag) obj;
+            if(travelBag1.brand==travelBag1.brand && travelBag2.capacity==travelBag2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }
