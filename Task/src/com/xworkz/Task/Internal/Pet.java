@@ -19,4 +19,18 @@ public class Pet {
     public int hashCode(){
         return 839;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Pet){
+            Pet pet1=this;
+            Pet pet2=(Pet)obj;
+            if(pet1.name==pet1.name && pet2.species==pet2.species){
+                return true;
+            }
+        }
+        return false;
+    }
 }

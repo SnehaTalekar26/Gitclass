@@ -19,4 +19,18 @@ public class MusicTrack {
     public int hashCode(){
         return 612;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof MusicTrack){
+            MusicTrack musicTrack1=this;
+            MusicTrack musicTrack2=(MusicTrack) obj;
+            if(musicTrack1.title==musicTrack1.title && musicTrack2.artist==musicTrack2.artist){
+                return true;
+            }
+        }
+        return false;
+    }
 }

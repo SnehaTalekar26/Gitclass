@@ -19,4 +19,18 @@ public class Oven {
     public int hashCode(){
         return 71;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Oven){
+            Oven oven1=this;
+            Oven oven2=(Oven)obj;
+            if(oven1.brand==oven1.brand && oven2.capacity==oven2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

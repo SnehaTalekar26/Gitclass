@@ -19,4 +19,18 @@ public class Painting {
     public int hashCode(){
         return 73;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Painting){
+            Painting painting1=this;
+            Painting painting2=(Painting)obj;
+            if(painting1.title==painting1.title && painting2.artist==painting2.artist){
+                return true;
+            }
+        }
+        return false;
+    }
 }

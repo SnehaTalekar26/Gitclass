@@ -19,4 +19,18 @@ public class MovieTicket {
     public int hashCode(){
         return 897;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof MovieTicket){
+            MovieTicket movieTicket1=this;
+            MovieTicket movieTicket2=(MovieTicket) obj;
+            if(movieTicket1.movieName==movieTicket1.movieName && movieTicket2.seatNumber==movieTicket2.seatNumber){
+                return true;
+            }
+        }
+        return false;
+    }
 }
