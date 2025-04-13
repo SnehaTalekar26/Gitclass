@@ -19,4 +19,18 @@ public class Bank {
     public int hashCode(){
         return 100;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Bank){
+            Bank bank1=this;
+            Bank bank2=(Bank) obj;
+            if(bank1.loan==bank1.loan && bank2.rate==bank2.rate){
+                return true;
+            }
+        }
+        return false;
+    }
 }

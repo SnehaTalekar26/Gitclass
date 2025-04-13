@@ -19,4 +19,18 @@ public class Calender {
     public int hashCode(){
         return 24;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Calender){
+            Calender calender1=this;
+            Calender calender2=(Calender) obj;
+            if(calender1.year==calender1.year && calender2.type==calender2.type){
+                return true;
+            }
+        }
+        return false;
+    }
 }

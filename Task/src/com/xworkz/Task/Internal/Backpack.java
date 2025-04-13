@@ -19,4 +19,18 @@ public class Backpack {
     public int hashCode(){
         return 20;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Backpack){
+            Backpack backpack1=this;
+            Backpack backpack2=(Backpack) obj;
+            if(backpack1.brand==backpack1.brand && backpack2.compartments==backpack2.compartments){
+                return true;
+            }
+        }
+        return false;
+    }
 }

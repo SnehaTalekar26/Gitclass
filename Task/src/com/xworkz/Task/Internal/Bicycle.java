@@ -19,4 +19,18 @@ public class Bicycle {
     public int hashCode(){
         return 108;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Bicycle){
+            Bicycle bicycle1=this;
+            Bicycle bicycle2=(Bicycle) obj;
+            if(bicycle1.type==bicycle1.type && bicycle2.gearCount==bicycle2.gearCount){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class AC {
     public int hashCode(){
         return 10;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof AC){
+            AC ac1=this;
+            AC ac2=(AC)obj;
+            if(ac1.brand==ac1.brand && ac2.tonnage==ac2.tonnage){
+                return true;
+            }
+        }
+        return false;
+    }
 }

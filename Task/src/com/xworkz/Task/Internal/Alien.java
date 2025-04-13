@@ -19,4 +19,18 @@ public class Alien {
     public int hashCode(){
         return 19;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Alien){
+            Alien alien1=this;
+            Alien alien2=(Alien) obj;
+            if(alien1.speciesName==alien1.speciesName && alien2.planetOrigin==alien2.planetOrigin){
+                return true;
+            }
+        }
+        return false;
+    }
 }

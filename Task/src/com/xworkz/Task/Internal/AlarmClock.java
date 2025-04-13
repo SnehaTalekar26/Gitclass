@@ -19,4 +19,18 @@ public class AlarmClock {
     public int hashCode(){
         return 1;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof AlarmClock){
+            AlarmClock alarmClock1=this;
+            AlarmClock alarmClock2=(AlarmClock) obj;
+            if(alarmClock1.brand==alarmClock1.brand && alarmClock2.hasSnooze==alarmClock2.hasSnooze){
+                return true;
+            }
+        }
+        return false;
+    }
 }
