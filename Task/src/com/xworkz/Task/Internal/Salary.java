@@ -19,4 +19,18 @@ public class Salary {
     public int hashCode(){
         return 82;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Salary){
+            Salary salary1=this;
+            Salary salary2=(Salary)obj;
+            if(salary1.base==salary1.base && salary2.bonus==salary2.bonus){
+                return true;
+            }
+        }
+        return false;
+    }
 }

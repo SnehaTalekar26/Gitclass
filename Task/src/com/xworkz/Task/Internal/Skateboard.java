@@ -19,4 +19,18 @@ public class Skateboard {
     public int hashCode(){
         return 70;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Skateboard){
+            Skateboard skateboard1=this;
+            Skateboard skateboard2=(Skateboard) obj;
+            if(skateboard1.deckMaterial==skateboard1.deckMaterial && skateboard2.wheelSize==skateboard2.wheelSize){
+                return true;
+            }
+        }
+        return false;
+    }
 }

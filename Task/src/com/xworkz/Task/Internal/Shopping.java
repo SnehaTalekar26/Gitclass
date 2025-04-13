@@ -19,4 +19,18 @@ public class Shopping {
     public int hashCode(){
         return 86;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Shopping){
+            Shopping shopping1=this;
+            Shopping shopping2=(Shopping) obj;
+            if(shopping1.quantity==shopping1.quantity && shopping2.price==shopping2.price){
+                return true;
+            }
+        }
+        return false;
+    }
 }

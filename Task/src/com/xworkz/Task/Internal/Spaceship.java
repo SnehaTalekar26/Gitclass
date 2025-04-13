@@ -19,4 +19,18 @@ public class Spaceship {
     public int hashCode(){
         return 8;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Spaceship){
+            Spaceship spaceship1=this;
+            Spaceship spaceship2=(Spaceship) obj;
+            if(spaceship1.model==spaceship1.model && spaceship2.capacity==spaceship2.capacity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

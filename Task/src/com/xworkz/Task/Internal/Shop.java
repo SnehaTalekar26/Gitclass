@@ -1,5 +1,7 @@
 package com.xworkz.Task.Internal;
 
+import sun.java2d.pipe.AAShapePipe;
+
 public class Shop {
     private String name;
     private int noOfCustomers;
@@ -18,5 +20,19 @@ public class Shop {
     @Override
     public int hashCode(){
         return 192;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Shop){
+            Shop shop1=this;
+            Shop shop2=(Shop)obj;
+            if(shop1.name==shop1.name && shop2.noOfCustomers==shop2.noOfCustomers){
+                return true;
+            }
+        }
+        return false;
     }
 }

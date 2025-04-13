@@ -19,4 +19,18 @@ public class SecretMission {
     public int hashCode(){
         return 787;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof SecretMission){
+            SecretMission secretMission1=this;
+            SecretMission secretMission2=(SecretMission) obj;
+            if(secretMission1.codeName==secretMission1.codeName && secretMission2.objective==secretMission2.objective){
+                return true;
+            }
+        }
+        return false;
+    }
 }
