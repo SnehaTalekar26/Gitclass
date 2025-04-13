@@ -19,4 +19,18 @@ public class Planet {
     public int hashCode(){
         return 876;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Planet){
+            Planet planet1=this;
+            Planet planet2=(Planet) obj;
+            if(planet1.name==planet1.name && planet2.gravity==planet2.gravity){
+                return true;
+            }
+        }
+        return false;
+    }
 }

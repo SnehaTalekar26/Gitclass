@@ -19,4 +19,18 @@ public class Recipe {
     public int hashCode(){
         return 261;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Recipe){
+            Recipe recipe1=this;
+            Recipe recipe2=(Recipe) obj;
+            if(recipe1.dishName==recipe1.dishName && recipe2.prepTime==recipe2.prepTime){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class Programming {
     public int hashCode(){
         return 873;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Programming){
+            Programming programming1=this;
+            Programming programming2=(Programming) obj;
+            if(programming1.counter==programming1.counter && programming2.limit==programming2.limit){
+                return true;
+            }
+        }
+        return false;
+    }
 }

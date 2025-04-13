@@ -19,4 +19,18 @@ public class Puzzle {
     public int hashCode(){
         return 3;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Puzzle){
+            Puzzle puzzle1=this;
+            Puzzle puzzle2=(Puzzle) obj;
+            if(puzzle1.name==puzzle1.name && puzzle2.level==puzzle2.level){
+                return true;
+            }
+        }
+        return false;
+    }
 }

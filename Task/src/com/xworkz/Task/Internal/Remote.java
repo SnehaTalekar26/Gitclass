@@ -19,4 +19,18 @@ public class Remote {
     public int hashCode(){
         return 916;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Remote){
+            Remote remote1=this;
+            Remote remote2=(Remote) obj;
+            if(remote1.model==remote1.model && remote2.supportsVoiceControl==remote2.supportsVoiceControl){
+                return true;
+            }
+        }
+        return false;
+    }
 }

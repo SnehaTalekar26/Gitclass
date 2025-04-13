@@ -19,4 +19,18 @@ public class Printer {
     public int hashCode(){
         return 983;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Printer){
+            Printer printer1=this;
+            Printer printer2=(Printer) obj;
+            if(printer1.brand==printer1.brand && printer2.isColor==printer2.isColor){
+                return true;
+            }
+        }
+        return false;
+    }
 }

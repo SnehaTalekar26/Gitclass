@@ -19,4 +19,18 @@ public class Plant {
     public int hashCode(){
         return 2;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Plant){
+            Plant plant1=this;
+            Plant plant2=(Plant) obj;
+            if(plant1.species==plant1.species && plant2.height==plant2.height){
+                return true;
+            }
+        }
+        return false;
+    }
 }

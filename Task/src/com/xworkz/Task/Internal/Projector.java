@@ -19,4 +19,18 @@ public class Projector {
     public int hashCode(){
         return 83;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Projector){
+            Projector projector1=this;
+            Projector projector2=(Projector)obj;
+            if(projector1.resolution==projector1.resolution && projector2.brightness==projector2.brightness){
+                return true;
+            }
+        }
+        return false;
+    }
 }
