@@ -19,4 +19,18 @@ public class Electricity {
     public int hashCode(){
         return 102;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Electricity){
+            Electricity electricity1=this;
+            Electricity electricity2=(Electricity) obj;
+            if(electricity1.voltage==electricity1.voltage && electricity2.current==electricity2.current){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class Dice {
     public int hashCode(){
         return 77;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Dice){
+            Dice dice1=this;
+            Dice dice2=(Dice) obj;
+            if(dice1.noOfDice==dice1.noOfDice && dice2.outcomes==dice2.outcomes){
+                return true;
+            }
+        }
+        return false;
+    }
 }

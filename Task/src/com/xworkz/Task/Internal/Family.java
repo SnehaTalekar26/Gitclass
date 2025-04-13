@@ -19,4 +19,18 @@ public class Family {
     public int hashCode(){
         return 78;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Family){
+            Family family1=this;
+            Family family2=(Family) obj;
+            if(family1.sonAge==family1.sonAge && family2.motherAge==family2.motherAge){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,18 @@ public class DreamCatcher {
     public int hashCode(){
         return 66;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof AC){
+            DreamCatcher dreamCatcher1=this;
+            DreamCatcher dreamCatcher2=(DreamCatcher) obj;
+            if(dreamCatcher1.color==dreamCatcher1.color && dreamCatcher2.diameter==dreamCatcher2.diameter){
+                return true;
+            }
+        }
+        return false;
+    }
 }

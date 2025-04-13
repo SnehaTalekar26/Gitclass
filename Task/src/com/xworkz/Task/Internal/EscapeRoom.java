@@ -19,4 +19,18 @@ public class EscapeRoom {
     public int hashCode(){
         return 38;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof EscapeRoom){
+            EscapeRoom escapeRoom1=this;
+            EscapeRoom escapeRoom2=(EscapeRoom) obj;
+            if(escapeRoom1.theme==escapeRoom1.theme && escapeRoom2.level==escapeRoom2.level){
+                return true;
+            }
+        }
+        return false;
+    }
 }

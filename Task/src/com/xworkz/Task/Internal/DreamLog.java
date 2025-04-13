@@ -19,4 +19,18 @@ public class DreamLog {
     public int hashCode(){
         return 88;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof DreamLog){
+            DreamLog dreamLog1=this;
+            DreamLog dreamLog2=(DreamLog) obj;
+            if(dreamLog1.dreamTitle==dreamLog1.dreamTitle && dreamLog2.mood==dreamLog2.mood){
+                return true;
+            }
+        }
+        return false;
+    }
 }

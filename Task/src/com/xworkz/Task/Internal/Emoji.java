@@ -19,4 +19,18 @@ public class Emoji {
     public int hashCode(){
         return 64;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Emoji){
+            Emoji emoji1=this;
+            Emoji emoji2=(Emoji) obj;
+            if(emoji1.symbol==emoji1.symbol && emoji2.meaning==emoji2.meaning){
+                return true;
+            }
+        }
+        return false;
+    }
 }
