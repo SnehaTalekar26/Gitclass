@@ -1,5 +1,7 @@
 package com.xworkz.Task.Internal;
 
+import javafx.scene.control.Tab;
+
 public class Tablet {
     private String brand;
     private int screenSize;
@@ -18,5 +20,19 @@ public class Tablet {
     @Override
     public int hashCode(){
         return 11;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Tablet){
+            Tablet tablet1=this;
+            Tablet tablet2=(Tablet)obj;
+            if(tablet1.brand==tablet1.brand && tablet2.screenSize==tablet2.screenSize){
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -13,10 +13,24 @@ public class Tent {
 
     @Override
     public String toString(){
-        return " Tent capacity: " + this.capacity + " person(s) ,Color: " + this.color + " ,Waterproof: " + this.isWaterproof;
+        return " Tent capacity: " + this.capacity + " ,Color: " + this.color + " ,Waterproof: " + this.isWaterproof;
     }
     @Override
     public int hashCode(){
         return 44;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Tent){
+            Tent tent1=this;
+            Tent tent2=(Tent)obj;
+            if(tent1.capacity==tent1.capacity && tent2.color==tent2.color){
+                return true;
+            }
+        }
+        return false;
     }
 }

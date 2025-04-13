@@ -19,4 +19,18 @@ public class Theater {
     public int hashCode(){
         return 66;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Theater){
+            Theater theater1=this;
+            Theater theater2=(Theater) obj;
+            if(theater1.movieName==theater1.movieName && theater2.noOfSeats==theater2.noOfSeats){
+                return true;
+            }
+        }
+        return false;
+    }
 }

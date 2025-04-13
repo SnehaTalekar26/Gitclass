@@ -19,4 +19,18 @@ public class Toothbrush {
     public int hashCode(){
         return 609;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Toothbrush){
+            Toothbrush toothbrush1=this;
+            Toothbrush toothbrush2=(Toothbrush) obj;
+            if(toothbrush1.brand==toothbrush1.brand && toothbrush2.isElectric==toothbrush2.isElectric){
+                return true;
+            }
+        }
+        return false;
+    }
 }

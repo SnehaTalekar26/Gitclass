@@ -19,4 +19,18 @@ public class TimeMachine {
     public int hashCode(){
         return 112;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof TimeMachine){
+            TimeMachine timeMachine1=this;
+            TimeMachine timeMachine2=(TimeMachine) obj;
+            if(timeMachine1.destinationYear==timeMachine1.destinationYear && timeMachine2.operatorName==timeMachine2.operatorName){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -1,5 +1,7 @@
 package com.xworkz.Task.Internal;
 
+import javafx.scene.control.Tab;
+
 public class Table {
     private String material;
     private int height;
@@ -18,5 +20,19 @@ public class Table {
     @Override
     public int hashCode(){
         return 12;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Table){
+            Table table1=this;
+            Table table2=(Table) obj;
+            if(table1.material==table1.material && table2.height==table2.height){
+                return true;
+            }
+        }
+        return false;
     }
 }

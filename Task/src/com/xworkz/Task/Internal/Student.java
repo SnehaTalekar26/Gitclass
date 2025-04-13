@@ -19,4 +19,18 @@ public class Student {
     public int hashCode(){
         return 4;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Student){
+            Student student1=this;
+            Student student2=(Student) obj;
+            if(student1.name==student1.name && student2.age==student2.age){
+                return true;
+            }
+        }
+        return false;
+    }
 }

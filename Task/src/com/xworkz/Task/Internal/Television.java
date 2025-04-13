@@ -19,4 +19,18 @@ public class Television {
     public int hashCode(){
         return 22;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Television){
+            Television television1=this;
+            Television television2=(Television) obj;
+            if(television1.brand==television1.brand && television2.screenSize==television2.screenSize){
+                return true;
+            }
+        }
+        return false;
+    }
 }

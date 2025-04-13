@@ -19,4 +19,18 @@ public class SuperPower {
     public int hashCode(){
         return 13;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof SuperPower){
+            SuperPower superPower1=this;
+            SuperPower superPower2=(SuperPower) obj;
+            if(superPower1.powerName==superPower1.powerName && superPower2.type==superPower2.type){
+                return true;
+            }
+        }
+        return false;
+    }
 }
