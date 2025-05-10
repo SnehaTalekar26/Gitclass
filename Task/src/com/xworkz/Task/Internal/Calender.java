@@ -1,0 +1,36 @@
+package com.xworkz.Task.Internal;
+
+public class Calender {
+    private int year;
+    private String type;
+    private boolean isLeapYear;
+
+    public Calender(int year, String type, boolean isLeapYear){
+        this.year = year;
+        this.type = type;
+        this.isLeapYear = isLeapYear;
+    }
+
+    @Override
+    public String toString(){
+        return " Calendar year: " + this.year + " ,Type: " + this.type + " ,Leap Year: " + this.isLeapYear;
+    }
+    @Override
+    public int hashCode(){
+        return 24;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("not null");
+        }
+        if(obj instanceof Calender){
+            Calender calender1=this;
+            Calender calender2=(Calender) obj;
+            if(calender1.year==calender1.year && calender2.type==calender2.type){
+                return true;
+            }
+        }
+        return false;
+    }
+}
